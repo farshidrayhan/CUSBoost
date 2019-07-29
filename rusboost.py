@@ -18,9 +18,9 @@ from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import SMOTE
 
 
-class AdaBoost:
-    def __init__(self, M, depth,neighbours):
-        self.M = M
+class RusBoost:
+    def __init__(self, n_estimators, depth):
+        self.M = n_estimators
         self.depth = depth
         self.undersampler = RandomUnderSampler(return_indices=True,replacement=False)
 
